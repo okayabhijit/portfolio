@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Abhijit Singh - Full-Stack Developer</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="resume.css">
+</head>
+<body class="bg-slate-100 text-slate-800 selection:bg-blue-500 selection:text-white">
+    <!-- Navbar Component -->
+    <nav id="menu-bar" class="fixed top-0 left-0 right-0 h-10 bg-white/80 backdrop-blur-md shadow-sm z-50 flex items-center justify-between px-6 text-sm">
+        <div class="font-semibold text-slate-700">Abhijit Singh</div>
+        <div class="flex items-center space-x-5 ml-auto">
+            <div class="flex space-x-5">
+                <a href="#summary-section" class="text-slate-600 hover:text-blue-600 transition-colors duration-200">Summary</a>
+                <a href="#skills-section" class="text-slate-600 hover:text-blue-600 transition-colors duration-200">Skills</a>
+                <a href="#experience-section" class="text-slate-600 hover:text-blue-600 transition-colors duration-200">Experience</a>
+                <a href="#projects-section" class="text-slate-600 hover:text-blue-600 transition-colors duration-200">Projects</a>
+                <a href="#education-section" class="text-slate-600 hover:text-blue-600 transition-colors duration-200">Education</a>
+            </div>
+            <button id="darkmode-toggle" aria-label="Toggle dark mode" class="ml-4 p-1.5 rounded-full hover:bg-slate-200 dark:hover:bg-slate-700 transition-colors" type="button">
+                <svg id="darkmode-icon" xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="none" viewBox="0 0 24 24" stroke="currentColor" class="text-slate-600 dark:text-slate-200">
+                    <path id="sun-icon" d="M12 4.75V3m0 18v-1.75M4.75 12H3m18 0h-1.75M6.364 6.364l-1.237-1.237m13.546 13.546l-1.237-1.237M6.364 17.636l-1.237 1.237m13.546-13.546l-1.237 1.237" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                    <path id="moon-icon" d="M21 12.79A9 9 0 1111.21 3a7 7 0 109.79 9.79z" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" style="display:none"/>
+                </svg>
+            </button>
+        </div>
+    </nav>
+    <div id="desktop" class="pt-16 min-h-screen">
+        <main class="max-w-5xl mx-auto p-4 md:p-8 space-y-8 md:space-y-10">
+            <!-- Header Component -->
+            <header class="bg-white p-6 md:p-8 rounded-xl shadow-lg reveal-on-scroll">
+                <h1 class="text-3xl md:text-4xl font-bold text-slate-800">Abhijit Singh</h1>
+                <p class="text-slate-600 mt-1">Faridabad, Haryana</p>
+                <div class="mt-4 space-y-2 md:space-y-0 md:flex md:space-x-6 text-sm text-slate-500">
+                    <a href="tel:+917455063929" class="flex items-center hover:text-blue-600 transition-colors">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="mr-2"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"></path></svg>
+                        (+91) 7455063929
+                    </a>
+                    <a href="mailto:okabhijitsingh@gmail.com" class="flex items-center hover:text-blue-600 transition-colors">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="mr-2"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path><polyline points="22,6 12,13 2,6"></polyline></svg>
+                        okabhijitsingh@gmail.com
+                    </a>
+                </div>
+                <div class="mt-3 space-y-2 md:space-y-0 md:flex md:space-x-6 text-sm">
+                    <a href="https://okayabhijit.github.io/moviediscovery/" target="_blank" rel="noopener noreferrer" class="flex items-center text-blue-600 hover:text-blue-700 hover:underline transition-colors">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="mr-2"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg>
+                        Portfolio
+                    </a>
+                    <a href="https://github.com/okayabhijit" target="_blank" rel="noopener noreferrer" class="flex items-center text-blue-600 hover:text-blue-700 hover:underline transition-colors">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="mr-2"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"></path></svg>
+                        GitHub
+                    </a>
+                </div>
+            </header>
+
+            <section id="summary-section" class="bg-white rounded-xl shadow-lg reveal-on-scroll">
+                <div class="flex items-center space-x-1.5 px-4 py-3 border-b border-slate-200">
+                    <div class="window-dots space-x-1.5 flex"><span class="dot-red"></span><span class="dot-yellow"></span><span class="dot-green"></span></div>
+                    <h2 class="ml-2 text-lg font-semibold text-slate-700">Summary</h2>
+                </div>
+                <div class="p-6 text-slate-700 leading-relaxed">
+                    <p>Highly self-motivated and adaptable Full-Stack Developer with 5+ years of experience in designing, developing, and deploying scalable web applications and e-learning solutions. Proficient in the MERN stack (MongoDB, Express.js, React.js, Node.js), PHP, and API development. Proven ability in end-to-end project execution, enhancing user experience, and optimizing application performance. Strong advocate for Agile methodologies and CI/CD practices. A collaborative team player with excellent problem-solving skills, committed to delivering high-quality, efficient solutions.</p>
+                </div>
+            </section>
+
+            <section id="skills-section" class="bg-white rounded-xl shadow-lg reveal-on-scroll">
+                <div class="flex items-center space-x-1.5 px-4 py-3 border-b border-slate-200">
+                    <div class="window-dots space-x-1.5 flex"><span class="dot-red"></span><span class="dot-yellow"></span><span class="dot-green"></span></div>
+                    <h2 class="ml-2 text-lg font-semibold text-slate-700">Skills</h2>
+                </div>
+                <div class="p-6 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+                    <div>
+                        <h3 class="font-semibold text-slate-700 mb-2">Front-End</h3>
+                        <ul class="list-disc list-inside text-slate-600 text-sm space-y-1">
+                            <li>HTML5, CSS3, JavaScript (ES6+), TypeScript</li>
+                            <li>React.js, Next.js, Redux, jQuery</li>
+                        </ul>
+                    </div>
+                    <div>
+                        <h3 class="font-semibold text-slate-700 mb-2">Back-End</h3>
+                        <ul class="list-disc list-inside text-slate-600 text-sm space-y-1">
+                            <li>Node.js, Express.js, PHP</li>
+                        </ul>
+                    </div>
+                    <div>
+                        <h3 class="font-semibold text-slate-700 mb-2">Databases</h3>
+                        <ul class="list-disc list-inside text-slate-600 text-sm space-y-1">
+                            <li>MySQL, MongoDB</li>
+                        </ul>
+                    </div>
+                    <div>
+                        <h3 class="font-semibold text-slate-700 mb-2">APIs & Microservices</h3>
+                        <ul class="list-disc list-inside text-slate-600 text-sm space-y-1">
+                            <li>RESTful API Design & Development</li>
+                            <li>Microservice Integration</li>
+                        </ul>
+                    </div>
+                    <div>
+                        <h3 class="font-semibold text-slate-700 mb-2">DevOps & Cloud</h3>
+                        <ul class="list-disc list-inside text-slate-600 text-sm space-y-1">
+                            <li>Git, CI/CD, Docker</li>
+                            <li>AWS (EC2, S3 - Basic), Azure (Basic)</li>
+                        </ul>
+                    </div>
+                    <div>
+                        <h3 class="font-semibold text-slate-700 mb-2">LMS</h3>
+                        <ul class="list-disc list-inside text-slate-600 text-sm space-y-1">
+                            <li>Moodle (Plugin Development, Customization, Migration, Upgrades)</li>
+                        </ul>
+                    </div>
+                    <div>
+                        <h3 class="font-semibold text-slate-700 mb-2">Tools & Methodologies</h3>
+                        <ul class="list-disc list-inside text-slate-600 text-sm space-y-1">
+                            <li>Agile/Scrum, Jira, VS Code, Postman</li>
+                            <li>Unit Testing</li>
+                        </ul>
+                    </div>
+                </div>
+            </section>
+
+            <section id="experience-section" class="bg-white rounded-xl shadow-lg reveal-on-scroll">
+                <div class="flex items-center space-x-1.5 px-4 py-3 border-b border-slate-200">
+                    <div class="window-dots space-x-1.5 flex"><span class="dot-red"></span><span class="dot-yellow"></span><span class="dot-green"></span></div>
+                    <h2 class="ml-2 text-lg font-semibold text-slate-700">Experience</h2>
+                </div>
+                <div class="p-6 space-y-8">
+                    <article class="border border-slate-200 rounded-lg p-5 shadow-sm hover:shadow-md transition-shadow duration-300">
+                        <h3 class="text-xl font-semibold text-slate-800">Full-Stack Developer</h3>
+                        <p class="text-slate-600">Shagun Enterprises | Faridabad, Haryana</p>
+                        <p class="text-xs text-slate-500 italic">(Product-based B2B Company)</p>
+                        <p class="text-sm text-slate-500 mt-1">January 2024 – Current</p>
+                        <ul class="mt-3 list-disc list-inside text-slate-700 space-y-1.5 text-sm leading-relaxed">
+                            <li>Spearheaded end-to-end development of a B2B product, architecting and implementing features using React.js (front-end) and Node.js (back-end).</li>
+                            <li>Engineered and integrated RESTful APIs, ensuring seamless data flow and third-party service connectivity.</li>
+                            <li>Implemented secure OAuth 2.0 authentication and authorization mechanisms.</li>
+                            <li>Led code refactoring initiatives, significantly improving application performance, scalability, and maintainability.</li>
+                            <li>Developed dynamic data visualization components and graph-based reports for enhanced analytics.</li>
+                            <li>Actively participated in Agile sprints, CI/CD pipeline management, and architectural design discussions.</li>
+                        </ul>
+                    </article>
+                    <article class="border border-slate-200 rounded-lg p-5 shadow-sm hover:shadow-md transition-shadow duration-300">
+                        <h3 class="text-xl font-semibold text-slate-800">Software Developer</h3>
+                        <p class="text-slate-600">Ballistic Learning Co. | Faridabad, Haryana</p>
+                        <p class="text-sm text-slate-500 mt-1">June 2020 – December 2023</p>
+                        <ul class="mt-3 list-disc list-inside text-slate-700 space-y-1.5 text-sm leading-relaxed">
+                            <li>Developed and maintained Moodle-based e-learning solutions, specializing in custom plugin development (e.g., E-proctoring, Leave Management, Timetable Management) using PHP and JavaScript.</li>
+                            <li>Led the migration of key Moodle functionalities to React.js, enhancing UX and application responsiveness.</li>
+                            <li>Engineered RESTful APIs and integrated microservices to extend LMS capabilities.</li>
+                            <li>Executed LMS upgrades (major/minor) and legacy code migrations, ensuring system stability and performance.</li>
+                            <li>Implemented role-based access control, theme customizations, and performance optimization for plugins.</li>
+                            <li>Developed features like course recommendations, video analytics, and third-party integrations (Google Calendar, Zoom, BigBlueButton).</li>
+                        </ul>
+                    </article>
+                </div>
+            </section>
+
+            <section id="projects-section" class="bg-white rounded-xl shadow-lg reveal-on-scroll">
+                <div class="flex items-center space-x-1.5 px-4 py-3 border-b border-slate-200">
+                    <div class="window-dots space-x-1.5 flex"><span class="dot-red"></span><span class="dot-yellow"></span><span class="dot-green"></span></div>
+                    <h2 class="ml-2 text-lg font-semibold text-slate-700">Personal Projects</h2>
+                </div>
+                <div class="p-6 grid grid-cols-1 md:grid-cols-2 gap-8">
+                    <article class="border border-slate-200 rounded-lg p-5 shadow-sm hover:shadow-md transition-shadow duration-300">
+                        <h3 class="text-lg font-semibold text-slate-800">jsAdventure - Animation Effect Library (NPM Package)</h3>
+                        <p class="mt-1 text-slate-700 text-sm">Developed and published an open-source NPM animation library for React applications.</p>
+                        <a href="https://github.com/okayabhijit/jsadventure" target="_blank" rel="noopener noreferrer" class="inline-block mt-2 text-sm text-blue-600 hover:text-blue-700 hover:underline">View on GitHub &rarr;</a>
+                    </article>
+                    <article class="border border-slate-200 rounded-lg p-5 shadow-sm hover:shadow-md transition-shadow duration-300">
+                        <h3 class="text-lg font-semibold text-slate-800">LMS Community Plugin (Forum Enhancement)</h3>
+                        <p class="mt-1 text-slate-700 text-sm">Developed a Moodle plugin using PHP & JavaScript to enhance forum interactivity and user engagement.</p>
+                    </article>
+                    <article class="border border-slate-200 rounded-lg p-5 shadow-sm hover:shadow-md transition-shadow duration-300 md:col-span-2">
+                        <h3 class="text-lg font-semibold text-slate-800">Movie Discovery Portfolio Website</h3>
+                        <p class="mt-1 text-slate-700 text-sm">Designed and built a movie discovery web application using React.js and external APIs.</p>
+                        <a href="https://okayabhijit.github.io/moviediscovery/" target="_blank" rel="noopener noreferrer" class="inline-block mt-2 text-sm text-blue-600 hover:text-blue-700 hover:underline">View Live &rarr;</a>
+                    </article>
+                </div>
+            </section>
+
+            <section id="education-section" class="bg-white rounded-xl shadow-lg reveal-on-scroll">
+                <div class="flex items-center space-x-1.5 px-4 py-3 border-b border-slate-200">
+                    <div class="window-dots space-x-1.5 flex"><span class="dot-red"></span><span class="dot-yellow"></span><span class="dot-green"></span></div>
+                    <h2 class="ml-2 text-lg font-semibold text-slate-700">Education</h2>
+                </div>
+                <div class="p-6">
+                    <h3 class="text-lg font-semibold text-slate-800">B.Tech in Computer Science</h3>
+                    <p class="text-slate-600">FET Agra, Dr. A.P.J. Abdul Kalam Technical University (AKTU)</p>
+                    <p class="text-sm text-slate-500 mt-1">May 2017</p>
+                </div>
+            </section>
+
+            <section id="activities-section" class="bg-white rounded-xl shadow-lg reveal-on-scroll">
+                <div class="flex items-center space-x-1.5 px-4 py-3 border-b border-slate-200">
+                    <div class="window-dots space-x-1.5 flex"><span class="dot-red"></span><span class="dot-yellow"></span><span class="dot-green"></span></div>
+                    <h2 class="ml-2 text-lg font-semibold text-slate-700">Activities & Interests</h2>
+                </div>
+                <div class="p-6">
+                    <ul class="list-disc list-inside text-slate-700 space-y-1 text-sm">
+                        <li>JavaScript Game Development, Open-source contributions</li>
+                        <li>Art & Design, Music Composition, Creative Writing</li>
+                    </ul>
+                </div>
+            </section>
+
+            <footer class="text-center py-8 text-sm text-slate-500 reveal-on-scroll">
+                <p>&copy; <span id="currentYear"></span> Abhijit Singh. All rights reserved.</p>
+                <p class="mt-1">Designed with a nod to macOS aesthetics.</p>
+            </footer>
+
+        </main>
+    </div>
+    <script src="resume.js"></script>
+</body>
+</html>
